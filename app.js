@@ -56,6 +56,7 @@ for (i = 0; i < 20; i++) {
         name: '',
         lastName: '',
         age: '',
+        email: '',
     };
 
     const randGender = randChoice(genders);
@@ -74,6 +75,7 @@ for (i = 0; i < 20; i++) {
 
     obj.lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
     obj.age = Math.floor(Math.random() * (78 - 18 + 1)) + 18;
+    obj.email = obj.name.toLowerCase() + '.' + obj.lastName.toLowerCase() + '@gmail.com';
 
     people.push(obj);
 }
